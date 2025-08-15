@@ -1,0 +1,16 @@
+/* assets/css/widget.css */
+:root { --wcc-bg:#ffffff; --wcc-text:#111; --wcc-accent:#2563eb; --wcc-bubble:#f3f4f6; }
+.wcc-dark :root, .wcc-dark { --wcc-bg:#0b0f19; --wcc-text:#e5e7eb; --wcc-accent:#60a5fa; --wcc-bubble:#111827; }
+.wcc-chat{ background:var(--wcc-bg); color:var(--wcc-text); border:1px solid #e5e7eb; border-radius:12px; max-width:640px; display:flex; flex-direction:column; height:420px; }
+.wcc-chat__header{ padding:10px 12px; display:flex; justify-content:space-between; align-items:center; border-bottom:1px solid #e5e7eb; }
+.wcc-chat__messages{ flex:1; overflow:auto; padding:12px; gap:8px; display:flex; flex-direction:column; }
+.wcc-msg{ max-width:80%; }
+.wcc-msg.is-me{ align-self:flex-end; text-align:right; }
+.wcc-msg__bubble{ background:var(--wcc-bubble); padding:8px 12px; border-radius:14px; word-break:break-word; }
+.wcc-msg.is-me .wcc-msg__bubble{ background:var(--wcc-accent); color:#fff; }
+.wcc-msg__meta{ font-size:12px; opacity:.65; margin-top:2px; }
+.wcc-chat__composer{ display:flex; gap:8px; padding:10px; border-top:1px solid #e5e7eb; }
+#wcc-input{ flex:1; resize:none; border:1px solid #cbd5e1; border-radius:10px; padding:8px 10px; }
+.wcc-btn{ background:var(--wcc-accent); color:#fff; border:none; padding:8px 12px; border-radius:10px; cursor:pointer; }
+.wcc-chat__typing{ padding:0 12px 8px; font-size:12px; opacity:.7; }
+.wcc-chat-login{ padding:10px; border:1px dashed #cbd5e1; border-radius:8px; background:#fafafa; }
